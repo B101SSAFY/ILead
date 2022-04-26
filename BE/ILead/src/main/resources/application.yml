@@ -1,0 +1,19 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+server:
+  port: 7777
+  servlet:
+    context-path: /ilead
+#  ssl:
+#    key-store: classpath:keystore.p12
+#    key-store-type: PKCS12
+#    key-store-password: ssafyB101!
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+#    org.hibernate.type: trace
