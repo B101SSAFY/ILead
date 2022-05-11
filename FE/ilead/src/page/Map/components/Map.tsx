@@ -1,14 +1,23 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Container, Box, Grid } from "@mui/material";
 import { Theme } from "@mui/material/styles";
 import { SxProps } from "@mui/system";
 import FadeIn from "react-fade-in";
 import FlipCard from "flip-card-react";
+import Lottie from "lottie-react";
+import animationData from "../../../modules/components/larva.json";
 import { BrowserView, MobileView } from "react-device-detect";
 
-function PigStory() {
+function Map() {
+  const navigate = useNavigate();
+  const existNick = sessionStorage.getItem("userNick");
+
   const saveMap = (map: any) => {
     sessionStorage.setItem("Map", map);
+    if (map != "prince") {
+      navigate(`/play`);
+    }
   };
 
   const pig = require("../../../assets/select_pig.png");
@@ -103,53 +112,65 @@ function PigStory() {
 
   return (
     <Box component="section" sx={{ display: "flex" }}>
-      <Container
-        sx={{
-          mt: 5,
-          mb: 20,
-          marginBottom: 40,
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Grid container spacing={5}>
-          <Grid item xs={12} md={4}>
-            <FadeIn delay={100} transitionDuration={1000}>
-              <Box sx={item}>
-                <FlipCard
-                  isFlipped={pigFlipped}
-                  front={pig_front}
-                  back={pig_back}
-                />
-              </Box>
-            </FadeIn>
+      {existNick ? (
+        <Container
+          sx={{
+            mt: 5,
+            mb: 20,
+            marginBottom: 40,
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Grid container spacing={5}>
+            <Grid item xs={12} md={4}>
+              <FadeIn delay={100} transitionDuration={1000}>
+                <Box sx={item}>
+                  <FlipCard
+                    isFlipped={pigFlipped}
+                    front={pig_front}
+                    back={pig_back}
+                  />
+                </Box>
+              </FadeIn>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FadeIn delay={500} transitionDuration={1000}>
+                <Box sx={item}>
+                  <FlipCard
+                    isFlipped={hanselFlipped}
+                    front={hansel_front}
+                    back={hansel_back}
+                  />
+                </Box>
+              </FadeIn>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <FadeIn delay={900} transitionDuration={1000}>
+                <Box sx={item}>
+                  <FlipCard
+                    isFlipped={princeFlipped}
+                    front={prince_front}
+                    back={prince_back}
+                  />
+                </Box>
+              </FadeIn>
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <FadeIn delay={500} transitionDuration={1000}>
-              <Box sx={item}>
-                <FlipCard
-                  isFlipped={hanselFlipped}
-                  front={hansel_front}
-                  back={hansel_back}
-                />
-              </Box>
-            </FadeIn>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <FadeIn delay={900} transitionDuration={1000}>
-              <Box sx={item}>
-                <FlipCard
-                  isFlipped={princeFlipped}
-                  front={prince_front}
-                  back={prince_back}
-                />
-              </Box>
-            </FadeIn>
-          </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      ) : (
+        <Container
+          sx={{
+            mb: 40,
+          }}
+        >
+          <Box style={{ width: "60%", height: "60%", margin: "0 auto" }}>
+            <Lottie animationData={animationData} loop autoplay />
+          </Box>
+        </Container>
+      )}
     </Box>
   );
 }
 
-export default PigStory;
+export default Map;
