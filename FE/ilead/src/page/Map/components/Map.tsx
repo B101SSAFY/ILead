@@ -15,7 +15,7 @@ function Map() {
 
   const saveMap = (map: any) => {
     sessionStorage.setItem("Map", map);
-    if (map != "prince") {
+    if (map !== "prince") {
       navigate(`/play`);
     }
   };
