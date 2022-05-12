@@ -32,29 +32,29 @@ pipeline {
 				sh 'docker run --network ilead -d --name nginx -p 80:80 -p 443:443 -v /etc/letsencrypt:/etc/letsencrypt -u root basepage/nginx'
 			}
 		}
-    stage('Java version') {
-			steps{
-				sh 'java -version'
-			}
-		}
-    stage('Springboot Build') {
-			steps {
-				sh 'docker cp aws.yml jenkins:/var/jenkins_home/workspace/ILead/BE/src/main/resources'
-				dir('./BE/ILead'){
-					sh './gradlew build'
-				}
-			}
-		}
-		stage('Build Springboot image'){
-			steps {
-				sh 'docker build -t basepage/springboot ./BE'
-			}
-		}
-		stage('Springboot Deploy') {
-			steps {
-				sh 'docker stop springboot && docker rm springboot'
-				sh 'docker run --network ilead -d --name springboot -p 7777:7777 -v /etc/letsencrypt:/etc/letsencrypt -u root basepage/springboot'
-			}
-		}
+    // stage('Java version') {
+		// 	steps{
+		// 		sh 'java -version'
+		// 	}
+		// }
+    // stage('Springboot Build') {
+		// 	steps {
+		// 		sh 'docker cp aws.yml jenkins:/var/jenkins_home/workspace/ILead/BE/src/main/resources'
+		// 		dir('./BE/ILead'){
+		// 			sh './gradlew build'
+		// 		}
+		// 	}
+		// }
+		// stage('Build Springboot image'){
+		// 	steps {
+		// 		sh 'docker build -t basepage/springboot ./BE'
+		// 	}
+		// }
+		// stage('Springboot Deploy') {
+		// 	steps {
+		// 		sh 'docker stop springboot && docker rm springboot'
+		// 		sh 'docker run --network ilead -d --name springboot -p 7777:7777 -v /etc/letsencrypt:/etc/letsencrypt -u root basepage/springboot'
+		// 	}
+		// }
   }
 }
