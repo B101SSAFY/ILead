@@ -1,4 +1,5 @@
 /Unity
 *.ppk
 *.pem
+*.p12
 aws.yml
