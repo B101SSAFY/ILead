@@ -1,15 +1,14 @@
 import * as React from "react";
-import UserNick from "./components/UserNick";
-import TopBar from "../../modules/components/TopBar";
-import Map from "./components/Map";
+import { Container } from "@mui/material";
+import Guide from "./components/Guide";
 import withRoot from "../../modules/withRoot";
 
 function Index() {
   return (
     <React.Fragment>
-      <UserNick />
-      <TopBar />
-      <Map />
+      <Container>
+        <Guide />
+      </Container>
     </React.Fragment>
   );
 }
