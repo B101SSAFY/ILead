@@ -41,14 +41,14 @@ function HanselStory() {
           <Grid item xs={12} md={8} my={5}>
             <AnimationOnScroll animateIn="animate__fadeInRightBig">
               <Typography variant="h2">
-                [핸젤과 그레텔]
+                [헨젤과 그레텔]
                 <Typography variant="h4">
                   <br />
-                  핸젤과 그레텔의 과자집 탈출기
+                  헨젤과 그레텔의 과자집 탈출기
                 </Typography>
                 <Typography variant="h5">
                   <br />
-                  오빠 핸젤, 여동생 그레텔과 마녀의 숨막히는 결투! 핸젤과
+                  오빠 헨젤, 여동생 그레텔과 마녀의 숨막히는 결투! 헨젤과
                   그레텔을 도와 마녀로부터 탈출하세요! 과연 아이들은 무사히
                   집으로 돌아갈 수 있을까요?
                 </Typography>
