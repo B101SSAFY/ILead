@@ -57,7 +57,7 @@ function LandingStory() {
                   sx={{ height: 330, borderRadius: "8px" }}
                 />
                 <Typography variant="h5" sx={{ my: 5 }}>
-                  핸젤과 그레텔
+                  헨젤과 그레텔
                 </Typography>
               </Box>
             </AnimationOnScroll>
