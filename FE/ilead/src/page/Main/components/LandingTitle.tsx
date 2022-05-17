@@ -5,6 +5,7 @@ import { Container, Box, Button } from "@mui/material";
 import FadeIn from "react-fade-in";
 import Lottie from "lottie-react";
 import animationData from "../../../assets/creativity.json";
+import animationDown from "../../../assets/arrow.json";
 
 export default function LandingTitle() {
   const navigate = useNavigate();
@@ -16,8 +17,7 @@ export default function LandingTitle() {
   return (
     <Container
       sx={{
-        mt: 25,
-        mb: 35,
+        mt: 20,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -48,6 +48,12 @@ export default function LandingTitle() {
             접속하기
           </Button>
         </Box>
+        <Lottie
+          style={{ width: "20%", margin: "30px auto 0 auto" }}
+          animationData={animationDown}
+          loop
+          autoplay
+        />
       </FadeIn>
     </Container>
   );
