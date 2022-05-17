@@ -1,4 +1,7 @@
-import * as React from "react";
+import React, { useState, useEffect } from "react";
+import { Container } from "@mui/material";
+import Lottie from "lottie-react";
+import animationData from "../../assets/loading.json";
 import withRoot from "../../modules/withRoot";
 import Unity, { UnityContext } from "react-unity-webgl";
 
@@ -10,8 +13,24 @@ function Index() {
     codeUrl: "Build/Build.wasm.unityweb",
   });
 
+  const [progression, setProgression] = useState(0);
+
+  useEffect(function () {
+    window.scrollTo(0, 0);
+    unityContext.on("progress", function (progression) {
+      setProgression(progression);
+    });
+  }, []);
+
   return (
     <React.Fragment>
+      {progression === 1 ? (
+        <div />
+      ) : (
+        <Container>
+          <Lottie animationData={animationData} loop autoplay />
+        </Container>
+      )}
       <Unity
         unityContext={unityContext}
         style={{
