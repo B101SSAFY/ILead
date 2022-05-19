@@ -23,7 +23,7 @@
 - **동화 선택**
     - 다양한 동화들을 직접 맵으로 움직여 동화를 선택할 수 있다.
 - **말하기 연습**
-    - 간단한 단어들을 직접 말하면서 간단한 말하기 연습을 할 수 있다.
+    - 간단한 단어들을 직접 말하면서 말하기 연습을 할 수 있다.
     - 등장인물들과 직접 대화하면서 동화에 몰입할 수 있다.
 - **등장인물과 기념촬영**
     - 등장인물과 기념촬영을 통해 동화에 몰입할 수 있다.
@@ -36,6 +36,7 @@
 - 아이리드의 장점과 컨텐츠에 대한 소개
 
 ![landing](https://user-images.githubusercontent.com/37528765/169255278-ebae08ba-b54a-497b-8963-2698a1bdd2a0.JPG)
+![landing_detail](https://user-images.githubusercontent.com/37528765/169278054-d71a761a-f3d1-4f1c-9293-69a254231d84.JPG)
 
 
 ---
@@ -46,48 +47,26 @@
 ![tutorial](https://user-images.githubusercontent.com/37528765/169255706-6088cb35-bf81-4b31-bf9f-91ce4625260a.JPG)
 
 
+---
+
+### 📌 동화 선택
+- 사용자가 원하는 동화 맵으로 이동할 수 있다.
+
+![select](https://user-images.githubusercontent.com/37528765/169278422-1ff2149d-8a35-45e7-8472-1e07774f4ca4.JPG)
 
 ---
 
-### 📌 보드게임 찾기
-- 전체 보드게임을 한눈에 확인할 수 있다.
-- 필터를 통해 내가 원하는 게임을 한번에 찾을 수 있다.
+### 📌 말하기 연습
+- 간단한 단어들을 직접 말하면서 말하기 연습을 할 수 있다.
 
-![findBoardgame](https://user-images.githubusercontent.com/37528765/161986852-e542d721-b9aa-4d91-a293-4ee03a6ea005.JPG)
-
-![findBoardgameFilter](https://user-images.githubusercontent.com/37528765/161695292-0d6b3f30-e8fa-47ca-a8cc-11a0c73bb470.JPG)
----
-
-### 📌 보드게임 상세보기
-- 게임의 구체적인 정보를 확인할 수 있다.
-- 별점을 주거나 리뷰를 작성할 수 있다.
-![detail](https://user-images.githubusercontent.com/37528765/161695212-075e8d60-3ac3-48c7-b9b3-26f3d8e7f404.JPG)
-![reviews](https://user-images.githubusercontent.com/37528765/161695190-67692e24-16ad-4adf-b787-77063747ff7a.JPG)
+![Talk](https://user-images.githubusercontent.com/37528765/169278740-094ddb95-5848-4339-89ba-6273c734603a.JPG)
 
 ---
 
-### 📌 BGM (Board Game Market)
-- 사용자간 보드게임 거래
-- 댓글을 통해 사용자가 거래 진행
+### 📌 등장인물들과 기념촬영
+- 동화속 등장인물과 기념촬영 할 수 있습니다.
 
-![bgm](https://user-images.githubusercontent.com/37528765/162168189-69603d8a-e63d-4726-9baa-8e4b8d117862.JPG)
-
----
-
-### 📌 내 주변 보드게임 카페 찾기
-- 내 위치를 확인
-- 주변의 보드게임 카페를 찾아 지도에 표시
-- 보드게임 카페의 주소 확인
-
-![boardCafe](https://user-images.githubusercontent.com/37528765/161987082-e325e6df-791d-42ae-9e87-6d866375c3ac.JPG)
-
----
-
-### 📌 관심목록
-- 하트를 눌러 환심목록에 추가
-- 추가한 관심있는 보드게임을 한눈에 확인
-
-![like](https://user-images.githubusercontent.com/37528765/162169011-14ce750a-ff5b-49dd-8db4-aa3f3a90231f.JPG)
+![photo](https://user-images.githubusercontent.com/37528765/169279049-99623571-0e31-499c-9920-c74fa42b0e93.JPG)
 
 <br>
 
@@ -107,28 +86,15 @@
 <br>
 
 ## 👨‍💻 Tech Architecture
-![architecture](https://user-images.githubusercontent.com/37528765/161695057-a9ddf84b-27e8-45ef-b06f-ff37b468d917.JPG)
+![Architecture](https://user-images.githubusercontent.com/37528765/169279252-c14e0e0c-7cab-47ac-854e-9e6629b64076.png)
 
 <br>
-
-## 🎈 ERD
-![ERD](https://user-images.githubusercontent.com/37528765/161695099-e769cd5f-8341-4e6c-8523-9ed7d9ab3b2b.JPG)
-
-<br>
-
-## 🍏 API
-### [거래 관련 API](https://documenter.getpostman.com/view/19276915/UVyvvufu)
-### [검색 관련 API](https://documenter.getpostman.com/view/19284792/UVyvvukB)
-### [리뷰 관련 API](https://documenter.getpostman.com/view/19284792/UVyvvukC)
-### [유저 관련 API](https://documenter.getpostman.com/view/19284775/UVyvvukE)
-### [추천 관련 API](https://documenter.getpostman.com/view/19284775/UVyvvukF)
-
 <br>
 
 ## 👊 Cooperation Tool
-- [Notion](https://placid-poppy-8d9.notion.site/28fe0bfa4f284fc18891ddb9be69aacf)  
-- [Figma](https://www.figma.com/file/3x9ntjWfqepbb1pP0RTcCU/%ED%8A%B9%ED%99%94%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0%3A1)
-- [Jira](https://jira.ssafy.com/projects/S06P22B101/summary)
+- [Notion](https://www.notion.so/b101-autonomy-pjt/e1927b1d6367417d926602dff60020cc)  
+- [Figma](https://www.figma.com/file/CSHqbd07dKw1byq6vrG1UU/%EC%9E%90%EC%9C%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0%3A1)
+- [Jira](https://jira.ssafy.com/projects/S06P31B101/summary)
 - Webex
 - Mattermost
 - Discord
@@ -138,5 +104,5 @@
 <br>
 
 ## ✅ 개선할 점
-    ✔ 거래 정보 상세화 (판매중, 판매완료, 대여 대기중, 대여중 등)
-    ✔ 거래에서 Websocket을 통한 채팅 구현
+    ✔ 다중접속을 통해 다른 사람들과 협동하여 진행
+    ✔ 자동진행
