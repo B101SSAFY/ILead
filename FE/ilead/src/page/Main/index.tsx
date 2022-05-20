@@ -1,4 +1,6 @@
 import * as React from "react";
+import ScrollToTop from "../../modules/components/ScrollToTop";
+import ScrollToTopPage from "../../modules/components/ScrollToTopPage";
 import TopBar from "../../modules/components/TopBar";
 import LandingTitle from "./components/LandingTitle";
 import LandingExperience from "./components/LandingExperience";
@@ -14,6 +16,7 @@ import "animate.css/animate.min.css";
 function Index() {
   return (
     <React.Fragment>
+      <ScrollToTopPage />
       <TopBar />
       <LandingTitle />
       <LandingExperience />
@@ -23,6 +26,7 @@ function Index() {
       <HanselStory />
       <PrinceStory />
       <Footer />
+      <ScrollToTop />
     </React.Fragment>
   );
 }
