@@ -29,13 +29,18 @@ function Index() {
         <div />
       ) : (
         <Container>
-          <Lottie animationData={animationData} loop autoplay />
+          <Lottie
+            style={{ height: "96vh" }}
+            animationData={animationData}
+            loop
+            autoplay
+          />
         </Container>
       )}
       <Unity
         unityContext={unityContext}
         style={{
-          height: "100vh",
+          height: `${progression === 1 ? "100vh" : "0"}`,
           width: "100%",
           background: "secondary.light",
           marginBottom: "-9px",
